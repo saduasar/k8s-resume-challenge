@@ -76,7 +76,7 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
           cluster-name: ${{ env.EKS_CLUSTER }}
           #config-files: .github/values/dev.yaml\
-          chart-path: ecommaap-charts/
+          chart-path: ecommapp-charts/
           namespace: default
           values: appimage=${{ secrets.REGISTRY }}${{ env.ECR_REPOSITORY }},apptag=${{ github.run_number }}
           name: ecommapp
