@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ecommapp  # Name of the container
-        image: {{ .Values. appimage}}: {{ .Values. apptag}}  # Docker image for the container
+        image: {{ .Values. appimage}}:{{ .Values. apptag}}  # Docker image for the container
         env:
           - name: DB_HOST  # Name of the environment variable
             valueFrom:
