@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ecommapp  # Label to identify the Deployment
 spec:
-  replicas: 1  # Number of replicas (instances) of the pod
+  replicas: 3  # Number of replicas (instances) of the pod
   selector:
     matchLabels:
       app: ecommapp  # Label selector to match pods managed by this Deployment
